@@ -1,0 +1,32 @@
+{
+  "name": "dsh-learning-coach",
+  "version": "0.1.0",
+  "description": "为 DSH Agent 增加持续、个性化、可追踪的教学能力",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "agent",
+    "learning",
+    "coach",
+    "education"
+  ],
+  "license": "MIT"
+}
